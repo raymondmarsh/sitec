@@ -70,3 +70,26 @@
                         <li><a href="contacts.html">Contacts</a></li>
                     </ul>
                 </nav>
+	</footer>
+<!-- / footer -->
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#myRoundabout').roundabout({
+			 shape: 'square',
+			 minScale: 0.93, // tiny!
+			 maxScale: 1, // tiny!
+			 easing:'easeOutExpo',
+			 clickToFocus:'true',
+			 focusBearing:'0',
+			 duration:800,
+			 reflect:true
+		});
+		tabs.init();
+		// for lightbox
+		if ($("a[rel^='prettyPhoto']").length) {
+			$(document).ready(function() {
+				// prettyPhoto
+				$("a[rel^='prettyPhoto']").prettyPhoto({theme:'light_square'});
+			});
